@@ -1,7 +1,6 @@
 FROM pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 WORKDIR /text-enhancement
 COPY requirements.txt /text-enhancement
-#RUN apt-get update -y; apt-get install -y gcc; apt-get install -y git
 RUN python -m pip install -r requirements.txt
 COPY server.py /text-enhancement
 ENTRYPOINT ["python3"]
