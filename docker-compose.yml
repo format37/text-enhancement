@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   server:
-    #restart: always
+    restart: always
     build: server
     volumes:
       - /etc/localtime:/etc/localtime:ro
