@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  server:
+    #restart: always
+    build: server
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    environment:
+      - TZ=Europe/Moscow
+      - PORT=2801
+    ports:
+      - 2801:2801
+      
