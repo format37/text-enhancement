@@ -4,6 +4,8 @@ Available languages ['en', 'de', 'ru', 'es']
 Available punctuation marks ['.', ',', '-', '!', '?', '—']  
 ### Run docker server:
 ```
+git clone https://github.com/format37/text-enhancement.git
+cd text-enhancement/
 sh compose.sh
 ```
 ### Usage example:
