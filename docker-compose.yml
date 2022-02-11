@@ -3,6 +3,10 @@ services:
   server:
     restart: always
     build: server
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
